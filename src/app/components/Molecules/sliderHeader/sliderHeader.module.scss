@@ -3,18 +3,21 @@
   overflow: hidden;
   position: absolute;
   bottom: 0px;
-  animation: scroll 60s linear infinite alternate;
+  animation: scroll 60s linear infinite;
   background-image: url("/background/Header/button.png");
-  background-size: 100%;
+  // background-size: 100%;
   align-items: flex-end;
-  height: 560px;
+  height: 291px;
+}
 
-  @keyframes scroll {
-    0% {
-      transform: translateX(0);
-    }
-    100% {
-      transform: translateX(calc(-100% + (590px * 3 + 28px * 5)));
-    }
+@media screen and (max-width: 1250px) {
+  .wrap {
+    height: 232px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .wrap {
+    height: 162px;
   }
 }

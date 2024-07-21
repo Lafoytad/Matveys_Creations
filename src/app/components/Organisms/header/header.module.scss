@@ -81,3 +81,143 @@
     bottom: 285px;
   }
 }
+
+@media screen and (max-width: 1550px) {
+  .header {
+    background-size: 1550px;
+    & .wrapper {
+      margin-top: 78px;
+      margin-left: 115px;
+
+      & .column {
+        & .title {
+          font-size: 85px;
+        }
+        & .text {
+          margin-top: 50px;
+        }
+      }
+
+      & .peaple {
+        & .Matvey {
+          width: 324px;
+          height: 500px;
+
+          right: 225px;
+        }
+
+        & .Mask {
+          width: 212px;
+          height: 369px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1250px) {
+  .header {
+    background-size: 1250px;
+    height: 700px;
+    & .wrapper {
+      margin-top: 55px;
+      margin-left: 84px;
+
+      & .column {
+        & .title {
+          font-size: 70px;
+        }
+        & .text {
+          margin-top: 40px;
+          font-size: 16px;
+        }
+      }
+
+      & .peaple {
+        & .Matvey {
+          width: 226px;
+          height: 350px;
+          right: 200px;
+          bottom: 225px;
+        }
+
+        & .Mask {
+          width: 148px;
+          height: 258px;
+          bottom: 225px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .header {
+    background-size: 1000px;
+    & .wrapper {
+      margin-top: 40px;
+      margin-left: 106px;
+
+      & .column {
+        & .title {
+          font-size: 50px;
+        }
+        & .text {
+          margin-top: 20px;
+          width: 330px;
+          font-size: 13px;
+        }
+      }
+
+      & .peaple {
+        & .Matvey {
+          width: 180px;
+          height: 280px;
+          right: 130px;
+        }
+
+        & .Mask {
+          width: 118px;
+          height: 206px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .header {
+    background-size: 700px;
+    height: 490px;
+    & .wrapper {
+      margin-top: 18px;
+      margin-left: 75px;
+
+      & .column {
+        & .title {
+          font-size: 35px;
+        }
+        & .text {
+          margin-top: 20px;
+          width: 250px;
+          font-size: 10px;
+        }
+      }
+
+      & .peaple {
+        & .Matvey {
+          width: 144px;
+          height: 224px;
+          right: 100px;
+          bottom: 160px;
+        }
+
+        & .Mask {
+          width: 94px;
+          height: 164px;
+          bottom: 160px;
+        }
+      }
+    }
+  }
+}

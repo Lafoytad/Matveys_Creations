@@ -1,17 +1,57 @@
 .sliderContainer {
   display: flex;
   gap: 28px;
+  animation: scroll 30s linear infinite alternate;
 }
 
 .image {
   background-color: #00ff73;
   cursor: pointer;
   flex-shrink: 0;
-  width: 590px;
-  height: 291px;
   transition: 0.3s ease-in-out;
 
   &:hover {
     box-shadow: 0px 0px 44px rgb(0, 67, 192);
+  }
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-100% + (590px * 2 + 28px * 6)));
+  }
+}
+
+@media screen and (max-width: 1250px) {
+  .image {
+    width: 472px;
+    height: 232px;
+  }
+
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(calc(-100% + (472px + 28px)));
+    }
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .image {
+    width: 330px;
+    height: 162px;
+  }
+
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(calc(-100%));
+    }
   }
 }

@@ -2,6 +2,7 @@
 import { useState, useEffect, useRef } from "react";
 import styles from "./sliderRow.module.scss";
 import Image from "next/image";
+import useResponsiveValue from "@/app/hooks/useResponsiveValue";
 
 interface ISliderProps {
   images: string[];
@@ -11,6 +12,7 @@ const SliderRow: React.FC<ISliderProps> = ({ images }) => {
   const [counter, setCounter] = useState<number>(1);
   const [transform, setTransform] = useState<number>(0);
   const intervalRef = useRef<NodeJS.Timeout | null>(null);
+  const responsiveValue = useResponsiveValue();
 
   useEffect(() => {
     const startInterval = () => {
@@ -65,7 +67,9 @@ const SliderRow: React.FC<ISliderProps> = ({ images }) => {
       <div className={styles.slider}>
         {images.map((item, index) => (
           <Image
-            style={{ transform: `translateX(-${transform}px)` }}
+            style={{
+              transform: `translateX(-${responsiveValue * transform}px)`,
+            }}
             key={index}
             src={item}
             alt="#"
