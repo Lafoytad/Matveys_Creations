@@ -1,0 +1,35 @@
+@import "/src/app/basicStyles/basic";
+
+.content {
+  height: 500px;
+  background-image: url("/background/Header/galaxy.png");
+  background-size: 100%;
+  overflow: hidden;
+}
+
+@media screen and (max-height: 1000px) {
+}
+
+@media screen and (max-width: 1800px) {
+}
+
+@media screen and (max-width: 1500px) {
+}
+
+@media screen and (max-width: 1000px) {
+  .content {
+    height: 300px;
+    & .title {
+      font-size: calc(113px * 0.4);
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .content {
+    height: 220px;
+    & .title {
+      font-size: calc(113px * 0.2);
+    }
+  }
+}

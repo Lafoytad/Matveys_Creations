@@ -4,7 +4,8 @@ import MarketCS2 from "@/app/components/Organisms/marketCS2Section/marketCS2Sect
 import QuickCart from "@/app/components/Organisms/quickCartSection/quickCartSection";
 import Kronix from "@/app/components/Organisms/kronixSection/kronixSection";
 import Organick from "@/app/components/Organisms/organickSection/organickSection";
-import MatveysCreations from "../../Organisms/matveysCreationsSection/matveysCreations";
+import MatveysCreations from "@/app/components/Organisms/matveysCreationsSection/matveysCreations";
+import Footer from "@/app/components/Organisms/footer/footer";
 
 export default function Home() {
   return (
@@ -15,7 +16,7 @@ export default function Home() {
       <Kronix />
       <QuickCart />
       <Organick />
-      <footer></footer>
+      <Footer />
     </div>
   );
 }
