@@ -10,13 +10,12 @@ const SliderSkroll: React.FC<ISliderProps> = ({ images }) => {
   return (
     <div className={styles.sliderContainer}>
       {images.map((item, index) => (
-        <a href="">
+        <a key={index} href="">
           <Image
             src={item}
             alt={`image-${index}`}
             width={590}
             height={291}
-            key={index}
             className={styles.image}
           />
         </a>

@@ -36,12 +36,12 @@ const SliderOrganick: React.FC = () => {
       <div className={styles.wrapper}>
         {imagesDesktop.map((item, index) => (
           <a
+            key={index}
             target="_blank"
             href="https://github.com/Lafoytad/Exam1_BorisovMatvei"
           >
             <Image
               className={styles.imagesDesktop}
-              key={index}
               width={338}
               height={188}
               src={item}
@@ -51,12 +51,12 @@ const SliderOrganick: React.FC = () => {
         ))}
         {imagesPhone.map((item, index) => (
           <a
+            key={index}
             target="_blank"
             href="https://github.com/Lafoytad/Exam1_BorisovMatvei"
           >
             <Image
               className={styles.imagesPhone}
-              key={index}
               width={338}
               height={888}
               src={item}
