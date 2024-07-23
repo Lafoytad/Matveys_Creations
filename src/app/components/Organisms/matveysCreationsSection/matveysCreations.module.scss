@@ -1,0 +1,254 @@
+@import "/src/app/basicStyles/basic";
+
+.content {
+  background-image: url("/background/MatveysCreations/Background.png");
+
+  & .skills {
+    left: 50%;
+    transform: translateX(-50%);
+    top: 190px;
+    text-align: center;
+    font-size: 30px;
+  }
+
+  & .text {
+    top: 740px;
+    left: 100px;
+    font-size: 25px;
+    width: 700px;
+  }
+
+  & .laptop {
+    position: absolute;
+    right: 130px;
+    top: 350px;
+
+    .laptopImg {
+      position: relative;
+      // z-index: 2;
+    }
+
+    .contentSlide {
+      position: absolute;
+      left: 78px;
+      top: 14px;
+      border-radius: 10px 10px 0px 0px;
+      overflow-y: auto;
+      height: 87%;
+      width: 80.5%;
+
+      &::-webkit-scrollbar {
+        width: 0px;
+      }
+    }
+  }
+
+  & .wrapper {
+    position: absolute;
+    display: flex;
+    left: 150px;
+    top: 300px;
+    gap: 15px;
+    width: 550px;
+    flex-wrap: wrap;
+    // left: calc(50% - 45px);
+    // transform: translateX(-50%);
+  }
+}
+
+@media screen and (max-height: 1000px) {
+  .content {
+    & .skills {
+      top: 160px;
+    }
+
+    & .text {
+      top: 630px;
+    }
+
+    & .laptop {
+      top: 300px;
+
+      .laptopImg {
+      }
+
+      .contentSlide {
+        top: 14px;
+
+        left: 78px;
+        height: 87%;
+        width: 80.5%;
+
+        .LongSlide {
+        }
+      }
+    }
+
+    & .laptop {
+      .contentSlide {
+      }
+    }
+
+    & .wrapper {
+      top: 290px;
+      width: 550px;
+    }
+  }
+}
+
+@media screen and (max-width: 1800px) {
+  .content {
+    & .skills {
+      top: 140px;
+    }
+
+    & .text {
+      left: 50px;
+      width: 500px;
+      font-size: calc(25px * 0.8);
+      top: 630px;
+    }
+
+    & .laptop {
+      right: 20px;
+      // width: calc();
+      // height: calc();
+      .contentSlide {
+      }
+    }
+
+    & .wrapper {
+      left: 50px;
+    }
+  }
+}
+
+@media screen and (max-width: 1500px) {
+  .content {
+    & .title {
+      font-size: calc(113px * 0.5);
+    }
+    & .skills {
+      font-size: calc(30px * 0.6);
+      top: 90px;
+    }
+
+    & .text {
+      top: 400px;
+      width: 330px;
+      font-size: calc(25px * 0.6);
+    }
+
+    & .laptop {
+      right: 10px;
+      top: 160px;
+      .laptopImg {
+        width: calc(793px * 0.6);
+        height: calc(480px * 0.6);
+      }
+      .contentSlide {
+        border-radius: 5px 5px 0px 0px;
+        top: 7px;
+        left: 47px;
+        width: calc(636px * 0.6);
+        height: calc(417px * 0.6);
+        .LongSlide {
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+
+    & .wrapper {
+      top: 180px;
+      width: calc(550px * 0.6);
+      img {
+        width: calc(261px * 0.6);
+        height: calc(146px * 0.6);
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .content {
+    background-color: #080706;
+    height: 720px;
+    & .title {
+      font-size: calc(113px * 0.2);
+    }
+    & .skills {
+      top: 40px;
+      font-size: calc(30px * 0.4);
+    }
+
+    & .text {
+      text-align: center;
+      left: 50%;
+      top: 580px;
+      width: 300px;
+      font-size: calc(25px * 0.4);
+    }
+
+    & .laptop {
+      display: flex;
+      justify-content: center;
+      left: 0px;
+      top: 100px;
+      .laptopImg {
+        width: calc(793px * 0.5);
+        height: calc(480px * 0.5);
+      }
+      .contentSlide {
+        display: flex;
+        justify-content: center;
+        top: 7px;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        justify-content: center;
+        // left: calc(47px * 0.83);
+        width: calc(636px * 0.5);
+        height: calc(417px * 0.5);
+      }
+    }
+
+    & .wrapper {
+      left: 50%;
+      transform: translateX(-50%);
+      top: 370px;
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .content {
+    height: 560px;
+    & .skills {
+      font-size: calc(30px * 0.2);
+    }
+
+    & .text {
+      top: 500px;
+    }
+
+    & .laptop {
+      // left: 20px;
+      top: 70px;
+
+      .laptopImg {
+        width: calc(793px * 0.4);
+        height: calc(480px * 0.4);
+      }
+      .contentSlide {
+        top: 5px;
+        width: calc(636px * 0.4);
+        height: calc(417px * 0.4);
+      }
+    }
+
+    & .wrapper {
+      top: 300px;
+    }
+  }
+}

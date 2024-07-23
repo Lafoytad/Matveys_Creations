@@ -15,7 +15,6 @@
 
     .laptopImg {
       position: relative;
-      // z-index: 2;
     }
 
     .contentSlide {
@@ -64,9 +63,11 @@
         height: calc(557px * 0.8);
       }
 
-      .LongSlide {
-        width: calc(920px * 0.8);
-        height: calc(557px * 0.8);
+      .contentSlide {
+        left: calc(89px * 0.8);
+        top: calc(15px * 0.8);
+        .LongSlide {
+        }
       }
     }
 
@@ -91,8 +92,11 @@
         width: calc(920px * 0.6);
         height: calc(557px * 0.6);
       }
-
-      .LongSlide {
+      .contentSlide {
+        left: calc(89px * 0.6);
+        top: calc(15px * 0.6);
+        .LongSlide {
+        }
       }
     }
 
@@ -121,8 +125,13 @@
         width: calc(920px * 0.4);
         height: calc(557px * 0.4);
       }
+      .contentSlide {
+        left: calc(89px * 0.4);
+        top: calc(15px * 0.4);
 
-      .LongSlide {
+        // width: 80.5%;
+        .LongSlide {
+        }
       }
     }
 
@@ -151,8 +160,14 @@
         width: calc(920px * 0.2);
         height: calc(557px * 0.2);
       }
-
-      .LongSlide {
+      .contentSlide {
+        left: calc(89px * 0.2);
+        top: calc(15px * 0.2);
+        border-radius: 4px 4px 0px 0px;
+        max-width: 149px;
+        .LongSlide {
+          height: calc(4489px * 0.3);
+        }
       }
     }
 

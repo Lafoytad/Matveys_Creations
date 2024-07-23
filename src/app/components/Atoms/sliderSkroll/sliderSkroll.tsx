@@ -1,18 +1,16 @@
 import Image from "next/image";
 import styles from "./sliderSkroll.module.scss";
-import Link from "next/link";
-
 interface ISliderProps {
-  images: string[];
+  images: { slide: string; path: string }[];
 }
 
 const SliderSkroll: React.FC<ISliderProps> = ({ images }) => {
   return (
     <div className={styles.sliderContainer}>
       {images.map((item, index) => (
-        <a key={index} href="">
+        <a key={index} target="blank" href={item.path}>
           <Image
-            src={item}
+            src={item.slide}
             alt={`image-${index}`}
             width={590}
             height={291}

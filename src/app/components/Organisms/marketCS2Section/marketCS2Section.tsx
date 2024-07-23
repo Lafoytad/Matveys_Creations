@@ -9,7 +9,7 @@ export default function MarketCS2() {
         <a
           target="_blank"
           rel="noopener noreferrer"
-          href="https://market-cs2.vercel.app/"
+          href="https://github.com/Lafoytad/MARKET-CS2"
         >
           Market-cs2
         </a>
