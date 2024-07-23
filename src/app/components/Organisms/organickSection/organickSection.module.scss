@@ -1,0 +1,140 @@
+@import "/src/app/basicStyles/basic";
+
+.content {
+  background-image: url("/background/Organick/mars.png");
+  & .text {
+    right: 500px;
+    top: 320px;
+    font-size: 30px;
+    text-align: right;
+  }
+
+  & .phone {
+    position: absolute;
+    right: 50px;
+    top: 70px;
+  }
+
+  & .skills {
+    right: 500px;
+    top: 700px;
+    text-align: right;
+    font-size: 35px;
+  }
+}
+
+@media screen and (max-height: 1000px) {
+  .content {
+    & .text {
+      right: 500px;
+      top: 320px;
+      font-size: 30px;
+      text-align: right;
+    }
+
+    & .phone {
+      position: absolute;
+      right: 50px;
+      top: 15px;
+    }
+
+    & .skills {
+      right: 500px;
+      top: 700px;
+      text-align: right;
+      font-size: 35px;
+    }
+  }
+}
+
+@media screen and (max-width: 1800px) {
+  .content {
+    & .text {
+      right: 420px;
+      top: 270px;
+      font-size: 30px;
+    }
+
+    & .phone {
+      right: 50px;
+      top: 65px;
+    }
+
+    & .skills {
+      right: 420px;
+      top: 550px;
+      font-size: 35px;
+    }
+  }
+}
+
+@media screen and (max-width: 1500px) {
+  .content {
+    background-color: rgb(48, 0, 0);
+    & .text {
+      right: 320px;
+      top: 170px;
+      font-size: calc(30px * 0.6);
+    }
+
+    & .phone {
+      right: 50px;
+      top: 25px;
+    }
+
+    & .skills {
+      right: 320px;
+      top: 450px;
+      font-size: calc(35px * 0.6);
+    }
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .content {
+    background-color: rgb(48, 0, 0);
+    height: 750px;
+    & .text {
+      top: 80px;
+      font-size: calc(30px * 0.4);
+      text-align: center;
+    }
+
+    & .phone {
+      right: 50%;
+      transform: translateX(50%);
+      top: 200px;
+    }
+
+    & .skills {
+      right: 50px;
+      top: 170px;
+      font-size: calc(35px * 0.4);
+      text-align: center;
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .content {
+    background-color: rgb(48, 0, 0);
+    height: 730px;
+    & .text {
+      top: 50px;
+      font-size: calc(30px * 0.4);
+      width: 300px;
+    }
+
+    & .phone {
+      right: 50%;
+      transform: translateX(50%);
+      top: 180px;
+    }
+
+    & .skills {
+      right: 50px;
+      top: 120px;
+      font-size: calc(35px * 0.4);
+    }
+  }
+}

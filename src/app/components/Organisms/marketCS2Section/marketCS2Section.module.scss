@@ -1,42 +1,10 @@
+@import "/src/app/basicStyles/basic";
+
 .content {
-  position: relative;
   background-image: url("/background/MarketCS2/Earth.png");
-  background-size: 125%; // 100% 16/9
-  background-repeat: no-repeat;
-  height: 100vh;
-
-  .title {
-    position: absolute;
-    transform: translateX(-50%);
-    left: 50%;
-    top: 0px;
-    text-align: center;
-    font-family: "franklin gothic";
-    font-weight: 400;
-    text-shadow: 0px 0px 15px black;
-    font-size: 113px;
-    color: #ffffffbd;
-
-    a {
-      transition: 0.4s;
-      &:hover {
-        color: #ffffff;
-      }
-    }
-  }
-
   & .text {
-    position: absolute;
     top: 270px;
     right: 900px;
-    max-width: 830px;
-    font-family: "franklin gothic";
-    font-weight: 300;
-    letter-spacing: -0.5px;
-    line-height: 30px;
-    text-shadow: 0px 0px 15px black;
-    font-size: 22px;
-    color: #ffffff;
   }
 
   & .laptop {
@@ -46,16 +14,9 @@
   }
 
   & .skills {
-    position: absolute;
     right: 36px;
     top: 800px;
     text-align: right;
-    font-family: "franklin gothic";
-    font-weight: 400;
-    text-shadow: 0px 0px 15px black;
-    font-size: 20px;
-    color: #ffffff;
-    max-width: 800px;
   }
 }
 
@@ -71,24 +32,11 @@
   }
 }
 
-@media screen and (max-width: 1915px) {
-  .content {
-    height: 1000px; //!
-  }
-}
-
 @media screen and (max-width: 1800px) {
   .content {
-    height: 900px;
-
-    .title {
-      font-size: calc(113px * 0.8);
-    }
-
     & .text {
       top: 250px;
       right: 700px;
-      font-size: 20px;
     }
 
     & .laptop {
@@ -99,26 +47,14 @@
         height: calc(547px * 0.8);
       }
     }
-
-    & .skills {
-      font-size: 17px;
-    }
   }
 }
 
 @media screen and (max-width: 1500px) {
   .content {
-    height: 580px;
-    .title {
-      font-size: calc(113px * 0.6);
-    }
-
     & .text {
       top: 150px;
       left: 80px;
-      width: 450px;
-      font-size: calc(15px * 0.7);
-      line-height: 20px;
     }
 
     & .laptop {
@@ -133,19 +69,12 @@
     & .skills {
       right: 10px;
       top: 430px;
-      font-size: 11px;
     }
   }
 }
 
 @media screen and (max-width: 1000px) {
   .content {
-    height: 700px;
-    background-color: rgb(0, 35, 58);
-    .title {
-      font-size: calc(113px * 0.5);
-    }
-
     & .text {
       top: 100px;
       transform: translateX(-50%);
@@ -164,27 +93,15 @@
     }
 
     & .skills {
-      transform: translateX(-50%);
-      left: 50%;
       top: 500px;
-      width: 410px;
-      text-align: center;
     }
   }
 }
 
 @media screen and (max-width: 500px) {
   .content {
-    height: 360px;
-    .title {
-      font-size: calc(113px * 0.2);
-    }
-
     & .text {
       top: 40px;
-      font-size: calc(15px * 0.5);
-      line-height: 10px;
-      width: 300px;
     }
 
     & .laptop {
@@ -198,9 +115,6 @@
 
     & .skills {
       top: 250px;
-      width: 300px;
-      text-align: center;
-      font-size: calc(11px * 0.6);
     }
   }
 }

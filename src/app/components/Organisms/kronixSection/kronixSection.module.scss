@@ -1,0 +1,164 @@
+@import "/src/app/basicStyles/basic";
+
+.content {
+  background-image: url("/background/Kronix/Saturn.png");
+  & .text {
+    left: 52%;
+    top: 360px;
+    font-size: 30px;
+  }
+
+  & .laptop {
+    position: absolute;
+    left: 30px;
+    top: 250px;
+
+    .laptopImg {
+      position: relative;
+      // z-index: 2;
+    }
+
+    .contentSlide {
+      position: absolute;
+      left: 89px;
+      top: 15px;
+      border-radius: 10px 10px 0px 0px;
+      overflow-y: auto;
+      height: 87%;
+      width: 80.5%;
+
+      &::-webkit-scrollbar {
+        width: 0px;
+      }
+
+      .LongSlide {
+        // position: absolute;
+        // left: 90px;
+        // top: 0px;
+      }
+    }
+  }
+
+  & .skills {
+    left: 50%;
+    transform: translateX(-50%);
+    top: 890px;
+    text-align: center;
+    font-size: 35px;
+  }
+}
+
+@media screen and (max-height: 1000px) {
+  .content {
+    & .skills {
+      top: 830px;
+    }
+  }
+}
+
+@media screen and (max-width: 1800px) {
+  .content {
+    & .laptop {
+      .laptopImg {
+        width: calc(920px * 0.8);
+        height: calc(557px * 0.8);
+      }
+
+      .LongSlide {
+        width: calc(920px * 0.8);
+        height: calc(557px * 0.8);
+      }
+    }
+
+    & .skills {
+      top: 770px;
+    }
+  }
+}
+
+@media screen and (max-width: 1500px) {
+  .content {
+    & .text {
+      left: 55%;
+      top: 210px;
+      font-size: calc(30px * 0.6);
+    }
+
+    & .laptop {
+      left: 10px;
+      top: 130px;
+      .laptopImg {
+        width: calc(920px * 0.6);
+        height: calc(557px * 0.6);
+      }
+
+      .LongSlide {
+      }
+    }
+
+    & .skills {
+      top: 500px;
+      font-size: calc(35px * 0.6);
+    }
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .content {
+    height: 550px;
+    & .text {
+      left: 50%;
+      transform: translateX(-50%);
+      top: 80px;
+      font-size: calc(30px * 0.4);
+    }
+
+    & .laptop {
+      left: 50%;
+      transform: translateX(-50%);
+      top: 250px;
+      .laptopImg {
+        width: calc(920px * 0.4);
+        height: calc(557px * 0.4);
+      }
+
+      .LongSlide {
+      }
+    }
+
+    & .skills {
+      top: 500px;
+      font-size: calc(35px * 0.4);
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .content {
+    height: 220px;
+    & .text {
+      left: 50%;
+      transform: translateX(-50%);
+      top: 30px;
+      font-size: calc(30px * 0.2);
+    }
+
+    & .laptop {
+      right: 10px;
+      transform: translateX(0px);
+      top: 50px;
+      .laptopImg {
+        width: calc(920px * 0.2);
+        height: calc(557px * 0.2);
+      }
+
+      .LongSlide {
+      }
+    }
+
+    & .skills {
+      top: 180px;
+      font-size: calc(35px * 0.2);
+    }
+  }
+}

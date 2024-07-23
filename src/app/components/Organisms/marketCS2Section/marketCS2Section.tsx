@@ -2,7 +2,7 @@ import Image from "next/image";
 import styles from "./marketCS2Section.module.scss";
 import SliderMarketCS2 from "@/app/components/Molecules/sliderMarketCS2/sliderMarketCS2";
 
-export default function Header() {
+export default function MarketCS2() {
   return (
     <section className={styles.content}>
       <h2 className={styles.title}>
