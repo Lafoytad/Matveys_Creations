@@ -5,7 +5,7 @@ import SliderHeader from "../../Molecules/sliderHeader/sliderHeader";
 
 export default function Footer() {
   return (
-    <section className={styles.content}>
+    <footer className={styles.content}>
       <h2 className={styles.title}>
         <Link rel="noopener noreferrer" href="/">
           Главная
@@ -16,6 +16,6 @@ export default function Footer() {
         </Link>
       </h2>
       <SliderHeader />
-    </section>
+    </footer>
   );
 }
