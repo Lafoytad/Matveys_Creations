@@ -15,7 +15,7 @@ export default function MatveysCreations() {
       </h2>
       <p className={styles.skills}>
         React (фреймфорк next.js) • TypeScript • JavaScript • Git • Hooks •
-        Photoshop
+        Atomic design • Photoshop
       </p>
 
       <div className={styles.laptop}>
