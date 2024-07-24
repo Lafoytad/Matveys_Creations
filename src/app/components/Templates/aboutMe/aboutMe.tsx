@@ -1,6 +1,5 @@
 import Footer from "@/app/components/Organisms/footer/footer";
-import Header from "@/app/components/Organisms/header/header";
-import styles from "./AboutMe.module.scss";
+import styles from "./aboutMe.module.scss";
 
 export default function AboutMe() {
   return (
